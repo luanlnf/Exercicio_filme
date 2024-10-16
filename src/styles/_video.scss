@@ -1,0 +1,37 @@
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw 5.6vw; // Mais padding no topo e menor embaixo para reduzir o espaçamento excessivo entre seções
+
+    &__title {
+      margin-bottom: 10px; // Reduzido o espaço entre o título e o vídeo
+    text-align: center;
+    
+        &-img {
+        max-width: 300px; // Definido tamanho máximo para a imagem do título
+        height: auto;
+    }
+    }
+
+    &__content {
+      width: 100%; // Aumentado para 100% para que o vídeo ocupe mais espaço
+      max-width: 1400px; // Aumentada a largura máxima
+        position: relative;
+      padding-bottom: 56.25%; // Proporção 16:9
+        height: 0;
+
+    &.video__content {
+        display: block;
+    }
+    }
+
+    &__iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+}

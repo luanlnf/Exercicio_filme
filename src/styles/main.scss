@@ -1,0 +1,96 @@
+@use 'variaveis';
+@use 'cabecalho';
+@use 'introducao';
+@use 'video';
+@use 'personagens';
+@use 'faq';
+@use 'footer';
+@use 'header';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rozha One", serif;
+    list-style: none;
+}
+
+body {
+    background-color: variaveis.$corDeFundo;
+    
+
+}
+
+
+
+
+
+@mixin text($fontSize: 20px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+@mixin title($fontSize: 40px){
+    @include text($fontSize);
+    color: variaveis.$corTextoSecundario;
+    font-family: "Pacifico", cursive;
+}
+
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTextoPrincipal;
+    background-color: variaveis.$corDeFundoBotaoPrimario;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$corDeFundoBotaoPrimario;
+
+    &:hover {
+        background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 3%);
+    }
+
+    &--secundary {
+        background-color: variaveis.$corDeFundo;
+        border-color: variaveis.$corDeFundo;
+        &:hover {
+            background-color: variaveis.$corDeFundoBotaosecundario;
+            color:  variaveis.$corTextoPrincipal;
+        }
+    }
+
+}
+
+.text {
+    @include text;
+    @media(max-width: 768px){
+        @include text(16px);
+    }
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.title--big {
+    @include title(44px);
+}
+.title {
+    @include title;    
+
+    @media(max-width: 768px){
+        @include title(24px);
+    }
+}
+.title--small {
+    @include title(28px);
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter x Hunter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <header class="header" >
+    <div class="header__container" id="#home">
+        <h1>
+            <img class="header__logo" src="./dist/imagens/hunter-x-hunter-logo.png" alt="hunter-x-hunter-logo">
+        </h1>
+        <ul class="header__links">
+            <li class="header__links__item ">
+                <a href="https://www.crunchyroll.com/pt-br/series/GY3VKX1MR/hunter-x-hunter" target="_blank" class="button">Assita Agora</a>
+            </li> 
+            <li class="header__links__item">
+                <a href="#home" class="button button--secundary">Home</a>
+            </li>
+
+        </ul>
+    </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <img class="hero__content_img" src="./dist/imagens/logo_hxh.jpg" alt="HxH">
+            <h2 class="title--big">A Caçada Começou</h2>
+            <p class="text">"Em um mundo cheio de perigos e mistérios, apenas os mais corajosos caçadores podem enfrentar o desconhecido. 
+                <br> "Você está pronto para se tornar um Hunter?""</p>
+            
+        </div>
+    </section>
+    
+    <section class="video" id="sobre">
+        <div class="video__title">
+            <img src="./dist/imagens/logo.png" alt="Título do Vídeo" class="video__title-img">
+        </div>
+        <div class="video__content">
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/d6kBeJjTGnY" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+    <section class="introduction">
+        <h2 class="introduction__title title--big">Hunter x Hunter</h2>
+        <p class="introduction__text text">
+            Gon Freecss é um jovem otimista e determinado que descobre que seu pai, Ging Freecss, é um renomado Hunter — um aventureiro profissional que busca tesouros, enfrenta criaturas perigosas e explora locais inexplorados. Motivado pelo desejo de encontrar seu pai e entender por que ele escolheu a vida de Hunter em vez de ficar com ele, Gon decide se tornar um Hunter também.
+            <br> Ao longo de sua jornada, Gon se une a amigos valiosos, como o astuto Kurapika, o ambicioso Leorio e o habilidoso Killua, que vêm de uma linhagem de assassinos. Juntos, eles enfrentam desafios mortais no Exame Hunter, um teste rigoroso que separa os melhores dos piores. À medida que a história avança, eles se envolvem em batalhas épicas, desvendam mistérios e enfrentam inimigos poderosos, incluindo as temíveis Chimera Ants, uma nova raça que ameaça a paz do mundo.
+            <br>Hunter x Hunter é uma emocionante aventura que explora temas de amizade, crescimento e sacrifício, enquanto Gon e seus amigos descobrem o verdadeiro significado de ser um Hunter em um mundo repleto de perigos e maravilhas.
+        </p>
+    </section>
+    <section class="shows" id="personagens">
+        <nav class="shows__tabs">
+            <button data-tab-button="personagens" class="shows__tabs__button shows__tabs__button--is-active">
+                Personagens
+            </button>
+            <button data-tab-button="filmes" class="shows__tabs__button">
+                Filmes
+            </button>
+        </nav>
+        <ul data-tab-id="personagens" class="shows__list shows__list--is-active">
+            <li class="shows__list__item" data-description="Gon Freecss é um personagem emblemático que simboliza a busca pela autodescoberta e a importância das amizades, enquanto enfrenta os desafios do mundo de Hunter x Hunter.">
+                <h3 class="title--small">Gon</h3>
+                <img src="./dist/imagens/gon.jpg" alt="gon">
+            </li>
+            <li class="shows__list__item" data-description="Killua Zoldyck é um personagem complexo e intrigante que simboliza a luta entre o destino e a liberdade, destacando a importância das escolhas pessoais e das amizades verdadeiras em Hunter x Hunter.">
+                <h3 class="title--small">Killua</h3>
+                <img src="./dist/imagens/killua.png" alt="killua">
+            </li>
+            <li class="shows__list__item" data-description="Kurapika é um personagem profundo e complexo que lida com temas de perda, vingança e amizade em Hunter x Hunter, tornando-o um dos favoritos entre os fãs da série.">
+                <h3 class="title--small">Kurapika</h3>
+                <img src="./dist/imagens/kurapika.jpg" alt="kurapika">
+            </li>
+            <li class="shows__list__item" data-description="Leorio Paradinight é um personagem que representa a importância da amizade e do apoio mútuo em Hunter x Hunter. Sua jornada pessoal e crescimento ao longo da série fazem dele um membro valioso do grupo e um favorito dos fãs.">
+                <h3 class="title--small">Leorio</h3>
+                <img src="./dist/imagens/leorio.jpg" alt="leorio">
+            </li>
+            <li class="shows__list__item" data-description="Hisoka Morow é um personagem fascinante e polêmico em Hunter x Hunter, simbolizando a dualidade entre a busca por prazer e a natureza destrutiva de seus desejos. Sua presença na série adiciona um elemento de tensão e complexidade, tornando-o um dos favoritos entre os fãs.">
+                <h3 class="title--small">Hisoka</h3>
+                <img src="./dist/imagens/hisoka.jpg" alt="hisoka">
+            </li>
+            <li class="shows__list__item" data-description="Chrollo Lucilfer é um personagem complexo em Hunter x Hunter, representando o antagonismo em sua forma mais intrigante. Sua busca por conhecimento e poder, combinada com sua habilidade de manipulação, o torna uma figura memorável e um dos vilões mais impactantes da série.">
+                <h3 class="title--small">Chrollo</h3>
+                <img src="./dist/imagens/chrollo.png" alt="chrollo">
+            </li>
+        </ul>
+        <ul data-tab-id="filmes" class="shows__list">
+            <li class="shows__list__item" data-description="Kurapika, que tem uma conexão pessoal com a Phantom Troupe devido à morte de seu clã, se junta aos amigos para enfrentar os vilões. O filme explora o desejo de vingança de Kurapika e sua luta interna ao confrontar os membros da Troupe, especialmente Uvogin, que é um dos mais poderosos.">
+                <h3 class="title--small">Filme Phantom Rouge </h3>
+                <img src="./dist/imagens/filmeFantasma.jpg" alt="filme Fantasma">
+            </li>
+            <li class="shows__list__item" data-description="A história se concentra em um evento significativo que envolve a Associação dos Caçadores. Gon, Killua, Leorio e Kurapika se reúnem para enfrentar um novo desafio que ameaça a paz entre os Caçadores e a organização criminosa conhecida como Kakin.">
+                <h3 class="title--small"> The Last Mission </h3>
+                <img src="./dist/imagens/filmeUltimaMissao.jpg" alt="ultima missao">
+            </li>
+        </ul>
+        
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </section>
+    <section class="faq" id="perguntas">
+        <h2 class="title">Perguntas Frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question="">
+                    O que são Hunters em Hunter x Hunter?
+                </div>
+                <div class="faq__questions__item__answer text">
+                    Hunters são indivíduos licenciados que realizam várias tarefas perigosas, como capturar criminosos, explorar terras inexploradas e encontrar tesouros.
+                </div>
+            </li> 
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question="">
+                    Quantas temporadas e episódios tem o anime?
+                </div>
+                <div class="faq__questions__item__answer text">
+                    O anime de 2011 tem 148 episódios, cobrindo até o arco das Eleições. Já o anime original de 1999 tem 62 episódios, além de alguns OVAs que completam a saga de Yorknew e Greed Island.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question="">
+                    Qual é o arco mais popular de Hunter x Hunter?
+                </div>
+                <div class="faq__questions__item__answer text">
+                    O Arco das Chimera Ants é considerado um dos mais emocionantes e sombrios, mas o Arco de Yorknew City também é bastante elogiado pelos fãs.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question="">
+                    Onde posso assistir aos filmes de Hunter x Hunter?
+                </div>
+                <div class="faq__questions__item__answer text">
+                    Os filmes podem ser encontrados em plataformas de streaming como Amazon Prime Video, Google Play Filmes e Apple TV para aluguel ou compra, dependendo da região.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question="">
+                    Os filmes valem a pena assistir?
+                </div>
+                <div class="faq__questions__item__answer text">
+                    Sim, se você é fã da série, os filmes são uma ótima forma de expandir seu entendimento sobre os personagens, especialmente Kurapika e a Trupe Fantasma. Apesar de não serem canônicos, têm boas cenas de ação e momentos emocionantes.
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/imagens/hunter-x-hunter-logo.png" alt="hunter-x-hunter-logo">
+        <ul class="footer__links">
+            <li class="footer__links__item">
+
+                <a href="https://www.instagram.com/luan_lnf/" class="text"> 
+                    <img src="./dist/imagens/instagram (1).svg" alt="Instagram"> Instagram
+                </a>
+            </li>
+            <li class="footer__links__item">
+                
+                <a href="https://github.com/luanlnf" class="text"> 
+                    <img src="./dist/imagens/github (1).svg" alt="GitHub"> GitHub
+                </a>
+            </li>
+            <li class="footer__links__item">
+
+                <a href="https://www.linkedin.com/in/luan-ferreira-lnf/" class="text"> 
+                    <img src="./dist/imagens/linkedin (1).svg" alt="Linkedin"> Linkedin
+                </a>
+            </li>
+        </ul>
+        <p class="text">
+            © 2024 Luan e suas empresas afiliadas. Todos os direitos reservados.
+        </p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

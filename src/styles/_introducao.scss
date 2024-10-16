@@ -1,0 +1,19 @@
+@use 'variaveis';
+
+.introduction {
+    padding: 40px 5.6vw; /* Espaçamento interno para a seção */
+    
+    
+    
+    &__title {
+        margin-bottom: 10px; /* Espaço abaixo do título */
+        text-align: center; /* Centraliza o título */
+    }
+
+    &__text {
+        text-align: center; /* Centraliza o texto */
+        max-width: 800px; /* Largura máxima do texto */
+        margin: 0 auto; /* Centraliza a div de texto */
+
+    }
+}

@@ -1,0 +1,64 @@
+
+.hero { 
+    display: flex; /* Ativa o layout flexível */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Coloca a div no lado direito */
+    padding: 5.6vw;
+    min-height: calc(80vh - 16px);
+    background-image: url(../imagens/quarteto.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; /* Mantém a imagem inteira visível */
+    background-position: left;
+    background-blend-mode: overlay;
+    border-radius: 5%; /* Borda arredondada */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+
+    @media (max-width:768px) {
+        background-image: url(../imagens/fundo.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        justify-content:center;
+        display: block;
+        padding: auto;
+        
+
+    }
+
+
+    &__content {
+        max-width: 50%; /* Limita a largura da div para manter o layout responsivo */
+        text-align: center; /* Alinha o texto à direita */
+        margin-left: 60%;
+        padding: 20px;
+        align-items: center;
+        display: block;
+        @media (max-width: 768px) {
+            padding: 2rem;
+            text-align: center;
+            margin: 0;
+            
+        }
+
+        &_img {
+            max-width: 200px;
+            margin: 0 auto 38px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+            
+            @media (max-width: 768px) {
+                max-width: 100px;
+
+            }
+        }
+
+
+        
+        
+
+        @media (max-width: 768px) {
+            max-width: 100%; /* No mobile, faz o conteúdo ocupar toda a largura */
+            text-align: center; /* Centraliza o texto no mobile */
+        }
+    }
+}
